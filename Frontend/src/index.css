@@ -1,0 +1,77 @@
+/* File: src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* --- REPLACE THE OLD :root WITH THIS NEW ONE --- */
+  :root {
+    /* "Luxe Canyon Sunset" Light Theme */
+    --background: 35 45% 97%; /* Light sun-bleached stone */
+    --foreground: 25 20% 25%; /* Warm dark charcoal text */
+
+    --card: 0 0% 100%; /* Clean white card */
+    --card-foreground: 25 20% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 20% 25%;
+
+    --primary: 15 80% 55%; /* Rich, deep Terracotta */
+    --primary-foreground: 25 40% 98%; /* Off-white text on buttons */
+
+    --secondary: 30 40% 94%; /* Soft, dusty sand */
+    --secondary-foreground: 25 20% 25%;
+
+    --muted: 30 40% 94%;
+    --muted-foreground: 25 15% 50%;
+
+    --accent: 40 90% 60%; /* Muted Marigold (for highlights) */
+    --accent-foreground: 25 20% 15%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 40% 90%;
+    --input: 30 40% 90%;
+    --ring: 15 80% 55%; /* Ring color matches Terracotta */
+
+    --radius: 0.5rem;
+  }
+
+  /* --- REPLACE THE OLD .dark WITH THIS NEW ONE --- */
+  .dark {
+    /* "Luxe Canyon Sunset" Dark Theme */
+    --background: 25 15% 12%; /* Deep, dark brown-charcoal */
+    --foreground: 30 20% 88%; /* Soft, warm light text */
+
+    --card: 25 15% 16%; /* Slightly lighter card background */
+    --card-foreground: 30 20% 88%;
+
+    --popover: 25 15% 16%;
+    --popover-foreground: 30 20% 88%;
+
+    --primary: 15 75% 60%; /* A slightly brighter Terracotta */
+    --primary-foreground: 25 15% 12%;
+
+    --secondary: 25 15% 22%; /* Darker, muted brown */
+    --secondary-foreground: 30 20% 88%;
+
+    --muted: 25 15% 22%;
+    --muted-foreground: 25 10% 55%;
+
+    --accent: 40 80% 65%; /* Brighter Marigold for dark mode */
+    --accent-foreground: 25 20% 15%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 25 15% 22%;
+    --input: 25 15% 22%;
+    --ring: 15 75% 60%;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
